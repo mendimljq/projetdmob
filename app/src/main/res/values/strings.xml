@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MedicApp</string>
+    <string name="connexion">Connexion</string>
+    <string name="medicalert">MedicAlert</string>
+</resources>
