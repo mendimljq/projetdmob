@@ -28,4 +28,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         android:onClick="logout"/>
 
+    <Button
+        android:id="@+id/btnpagealert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body Parts"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="bodyparts"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
