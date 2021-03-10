@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/almendra_sc"
-        android:text="Body parts chooser"
+        android:text="@string/body_parts_chooser"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/almendra_sc"
-        android:text="Veuillez sélectionner votre douleur"
+        android:text="Choose your pain"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +57,8 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/coeur" />
+        app:srcCompat="@drawable/coeur"
+        android:onClick="showHearthMessage"/>
 
     <ImageView
         android:id="@+id/cerveau"
@@ -71,7 +72,8 @@
         app:layout_constraintStart_toEndOf="@+id/coeur"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.464"
-        app:srcCompat="@drawable/cerveau" />
+        app:srcCompat="@drawable/cerveau"
+        android:onClick="showBrainMessage"/>
 
     <ImageView
         android:id="@+id/poumons"
@@ -85,7 +87,8 @@
         app:layout_constraintHorizontal_bias="0.77"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/coeur"
-        app:srcCompat="@drawable/poumons" />
+        app:srcCompat="@drawable/poumons"
+        android:onClick="showLungsMessage"/>
 
     <ImageView
         android:id="@+id/yeux"
@@ -98,6 +101,47 @@
         app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toEndOf="@+id/poumons"
         app:layout_constraintTop_toBottomOf="@+id/cerveau"
-        app:srcCompat="@drawable/oeil" />
+        app:srcCompat="@drawable/oeil"
+        android:onClick="showEyesMessage"/>
+
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

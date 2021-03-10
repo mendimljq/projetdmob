@@ -2,4 +2,15 @@
     <string name="app_name">MedicApp</string>
     <string name="connexion">Connexion</string>
     <string name="medicalert">MedicAlert</string>
+    <string name="body_parts_chooser">Body parts chooser</string>
+    <string name="veuillez_s_lectionner_votre_douleur">Veuillez sélectionner votre douleur</string>
+    <string name="welcome_to_dashboard">Welcome to Dashboard</string>
+    <string name="logout">Logout</string>
+    <string name="body_parts">Body Parts</string>
+    <string name="cr_er_un_nouveau_compte">Créer un nouveau compte</string>
+    <string name="full_name">Full Name</string>
+    <string name="coeur">I sense pain in my hearth</string>
+    <string name="poumons">I sense pain in my lungs</string>
+    <string name="yeux">I sense pain in my eyes</string>
+    <string name="brain">I sense pain in my brain</string>
 </resources>
