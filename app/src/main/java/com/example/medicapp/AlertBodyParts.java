@@ -10,6 +10,7 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
@@ -48,15 +49,41 @@ public class AlertBodyParts extends AppCompatActivity {
         img4=findViewById(R.id.yeux);
 
 
+
+
+
+        ActivityCompat.requestPermissions(AlertBodyParts.this, new String[]{Manifest.permission.SEND_SMS}, PackageManager.PERMISSION_GRANTED);
+
         //initialize fusedLocationProviderClient
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (ActivityCompat.checkSelfPermission(AlertBodyParts.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-                    //quand la permission est donnée
+//                    quand la permission est donnée
+//                    String phoneNumber = "0798590172";
+//                     message = getLocation();
+//                     mess1 = displayToast(getString(R.string.coeur));
+////
+////                    SmsManager smsManager = SmsManager.getDefault();
+////                    SmsManager.sendText(phoneNumber,null,message,null,null);
+//
+//                    try {
+//                        SmsManager smsManager = SmsManager.getDefault();
+//                        smsManager.sendTextMessage(phoneNumber, null, message, null, null);
+//                        Toast.makeText(getApplicationContext(), "SMS Sent!",
+//                                Toast.LENGTH_SHORT).show();
+//                    } catch (Exception e) {
+//                        Toast.makeText(getApplicationContext(),
+//                                "SMS faild, please try again later!",
+//                                Toast.LENGTH_SHORT).show();
+//                        e.printStackTrace();
+//
+//                    }
+
                     getLocation();
                     displayToast(getString(R.string.coeur));
+
                 } else {
                     //quand la permission est refusée
                     ActivityCompat.requestPermissions(AlertBodyParts.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
@@ -171,7 +198,11 @@ public class AlertBodyParts extends AppCompatActivity {
                         textView5.setText(Html.fromHtml(
                                 "<font color='#FFFFFF'><b>Address :</b><br></font>"
                                         + addresses.get(0).getAddressLine(0)
-                        ));
+                        )
+
+                        );
+
+
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
