@@ -13,4 +13,17 @@
     <string name="poumons">I sense pain in my lungs</string>
     <string name="yeux">I sense pain in my eyes</string>
     <string name="brain">I sense pain in my brain</string>
+    <string name="choose_your_pain">Choose your pain</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_here_create_account">New Here ? Create Account</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email_adress">Your Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone">Phone</string>
+    <string name="register">Register</string>
+    <string name="already_registered_login_here">Already Registered ? Login here</string>
+
+
 </resources>

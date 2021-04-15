@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/almendra_sc"
-        android:text="Choose your pain"
+        android:text="@string/choose_your_pain"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
